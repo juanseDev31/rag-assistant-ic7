@@ -242,7 +242,7 @@ Ver [`docs/AI_USAGE.md`](./docs/AI_USAGE.md) con el detalle transparente de las 
 - AWS Certified AI Practitioner
 - AWS Certified Cloud Practitioner
 
-- **☁️ MICROSOFT**
+**☁️ MICROSOFT**
 - AZ-900: Microsoft Azure Fundamentals
 
 **🔵 IBM Cloud**
