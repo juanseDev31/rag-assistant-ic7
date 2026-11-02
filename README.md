@@ -16,7 +16,7 @@ Demostración rápida del sistema: chat, como se ve la pagina principal.
 https://github.com/user-attachments/assets/1be19311-5cdf-46d4-a3bf-8c14dc0a4829
 
 
-👉 **[Ver `demo_ui.mp4`](./evidencias/demo_ui.mp4)** — descarga directa (54 MB)
+👉 **[Ver `demo_ui.mp4`](./evidencias/demo_ui.mp4)** — descarga directa (9 MB)
 
 > Nota: el video pesa más del límite de preview inline de GitHub, por lo que se abre al hacer clic. Para ejecución local, ver [Instalación y ejecución](#instalación-y-ejecución).
 
@@ -90,7 +90,7 @@ flowchart LR
 | Lenguaje | Python 3.11 | Estándar en Data/AI |
 | UI | Streamlit 1.40 | Chat out-of-the-box, deploy rápido |
 | LLM A | Groq (`openai/gpt-oss-120b`) | Latencia sub-segundo, tier gratis |
-| LLM B | Google Gemini (`gemini-flash-latest`) | Alias auto-actualizable, tier gratis |
+| LLM B | Google Gemini (`gemini-3.1-flash-lite`) | Modelo ligero y rápido, tier gratis |
 | Embeddings | sentence-transformers (MiniLM-L6-v2) | Local, gratis, 90 MB |
 | Vector store | SimpleVectorStore (numpy + pickle) | Zero deps nativas, portable |
 | PDF | pypdf | Extracción de texto confiable |
@@ -165,7 +165,7 @@ Desde el sidebar puedes alternar entre Groq y Gemini en tiempo real. El pipeline
 | Provider | Fortaleza | Modelo probado |
 |---|---|---|
 | 🚀 **Groq** | Latencia extremadamente baja (~1 s) | `openai/gpt-oss-120b` |
-| ✨ **Google Gemini** | Respuestas más estructuradas | `gemini-flash-latest` |
+| ✨ **Google Gemini** | Respuestas más estructuradas | `gemini-3.1-flash-lite` |
 
 **Para agregar un tercer proveedor:** implementar la clase `LLMProvider` en `src/llm_providers.py` y registrarla en `build_provider()`.
 
@@ -175,17 +175,26 @@ Desde el sidebar puedes alternar entre Groq y Gemini en tiempo real. El pipeline
 
 El proyecto está containerizado y es compatible con cualquier plataforma de contenedores (AWS App Runner, Azure Container Apps, Google Cloud Run, IBM Cloud Code Engine, ECS Fargate).
 
-**Despliegue en Streamlit Community Cloud:**
+### 🌐 App desplegada (live)
+
+> **https://rag-assistant-ic7-ky46g75xnsusnkcknsg8og.streamlit.app**
+
+![Deploy en Streamlit Cloud](./evidencias/13_streamlit_running.png)
+
+### Pasos para replicar el despliegue en Streamlit Community Cloud
 
 1. Push del repo a GitHub.
 2. [share.streamlit.io](https://share.streamlit.io) → New app → seleccionar repo.
 3. Archivo principal: `src/app.py`.
-4. En **Secrets**, agregar:
+4. En **Advanced settings → Secrets**, agregar:
    ```toml
    GROQ_API_KEY = "gsk_..."
    GOOGLE_API_KEY = "AIza..."
+   GEMINI_MODEL = "gemini-3.1-flash-lite"
    ```
 5. Deploy.
+
+El Dockerfile también está listo para despliegue en AWS (App Runner, ECS Fargate, EC2), Azure Container Apps, Google Cloud Run, o IBM Cloud Code Engine.
 
 ---
 
@@ -201,6 +210,7 @@ Las 3 preguntas requeridas por el enunciado (respuesta completa / parcial / fuer
 | 🟡 Respuesta parcial — "¿Teletrabajo + tiempo de aprobación?" | ![P2](./evidencias/02_pregunta_2.png) |
 | ❌ Fuera de alcance — "¿Política de bonos?" | ![P3](./evidencias/03_pregunta_3.png) |
 | ✨ Multi-provider — misma pregunta con Gemini | ![Gemini](./evidencias/04_pregunta_vacaciones.png) |
+| ☁️ Deploy en Streamlit Community Cloud | ![Deploy](./evidencias/13_streamlit_running.png) |
 
 Todas las capturas y un video demo de la UI (`demo_ui.mp4`) están en la carpeta [`evidencias/`](./evidencias/).
 
@@ -255,7 +265,7 @@ Ver [`docs/AI_USAGE.md`](./docs/AI_USAGE.md) con el detalle transparente de las 
 - **Tecnólogo en Desarrollo de Software**
 
 ### Experiencia relevante
-- T[ecnico/comercial cloud en TD SYNNEX (IBM Cloud + Data & AI)
+- Tecnico/comercial cloud en TD SYNNEX (IBM Cloud + Data & AI)
 - Demos técnicas con IBM Cloud (Object Storage, MQaaS, Schematics)
 - Capacitaciones a Business Partners en Kubernetes, Red Hat OpenShift (ROKS)
 - POCs con watsonx (Orchestrate) para clientes
