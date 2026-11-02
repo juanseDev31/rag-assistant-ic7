@@ -10,7 +10,11 @@ Asistente conversacional que permite consultar documentos internos mediante un p
 
 ## 🎥 Video demo (15 s)
 
-Demostración rápida del sistema: chat, switch entre Groq y Gemini, subida y eliminación de documentos.
+Demostración rápida del sistema: chat, como se ve la pagina principal.
+
+
+https://github.com/user-attachments/assets/1be19311-5cdf-46d4-a3bf-8c14dc0a4829
+
 
 👉 **[Ver `demo_ui.mp4`](./evidencias/demo_ui.mp4)** — descarga directa (54 MB)
 
@@ -238,14 +242,13 @@ Ver [`docs/AI_USAGE.md`](./docs/AI_USAGE.md) con el detalle transparente de las 
 - AWS Certified AI Practitioner
 - AWS Certified Cloud Practitioner
 
+- **☁️ MICROSOFT**
+- AZ-900: Microsoft Azure Fundamentals
+
 **🔵 IBM Cloud**
-- IBM Cloud Professional Architect
-- IBM Cloud Architect Plus
-- IBM Cloud Architect
-- IBM Cloud Technical Advocate
-- IBM Cloud Advocate
-- IBM Cloud Site Reliability Engineer
-- IBM Cloud Professional Developer v6
+- IBM Certified Professional Architect v6 PLUS IBM Professional Cloud Developer v6
+- IBM Certified Professional Architect v6 PLUS IBM Professional Cloud SRE v2
+- IBM Certified Professional Architect - Cloud v6
 
 ### Formación
 - **Ingeniería de Sistemas** — Politécnico Grancolombiano (2026)
@@ -258,7 +261,7 @@ Ver [`docs/AI_USAGE.md`](./docs/AI_USAGE.md) con el detalle transparente de las 
 - POCs con watsonx (Orchestrate) para clientes
 
 ### Objetivo profesional
-Transición hacia roles técnicos cloud: **Cloud Engineer** / **DevOps Engineer** / **Pre-Sales Engineer**, con enfoque en implementación práctica de soluciones AI y cloud-native.
+Transición hacia roles técnicos cloud: **Cloud Engineer** / **DevOps Engineer** / **AI Engineer**, con enfoque en implementación práctica de soluciones AI y cloud-native.
 
 ### Contacto
 📧 **juansegaleanog@gmail.com**
