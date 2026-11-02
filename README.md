@@ -8,7 +8,7 @@ Asistente conversacional que permite consultar documentos internos mediante un p
 
 ---
 
-## 🎥 Video demo (15 s)
+## 🎥 Video demo (19 s)
 
 Demostración rápida del sistema: chat, como se ve la pagina principal.
 
@@ -255,7 +255,7 @@ Ver [`docs/AI_USAGE.md`](./docs/AI_USAGE.md) con el detalle transparente de las 
 - **Tecnólogo en Desarrollo de Software**
 
 ### Experiencia relevante
-- Preventa cloud en TD SYNNEX (IBM Cloud + Data & AI)
+- T[ecnico/comercial cloud en TD SYNNEX (IBM Cloud + Data & AI)
 - Demos técnicas con IBM Cloud (Object Storage, MQaaS, Schematics)
 - Capacitaciones a Business Partners en Kubernetes, Red Hat OpenShift (ROKS)
 - POCs con watsonx (Orchestrate) para clientes
