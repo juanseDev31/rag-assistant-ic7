@@ -13,7 +13,7 @@ LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b")
 
 # ------------- Google Gemini (LLM provider B) -------------
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
 
 # ------------- Parámetros LLM compartidos -------------
 LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.1"))
